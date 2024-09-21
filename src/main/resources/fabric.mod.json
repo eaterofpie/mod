@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fantasymod",
+	"version": "${version}",
+	"name": "fantasymod",
+	"description": "fantasy!",
+	"authors": [
+		"west!"
+	],
+	"contact": {
+		"homepage": "https://west.net/",
+		"sources": "https://github.com/Fantasymod-west"
+	},
+	"license": "MIT",
+	"icon": "assets/fantasymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.west.fantasymod.Fantasymod"
+		],
+		"fabric-datagen": [
+			"net.west.fantasymod.FantasymodDataGenerator"
+		],
+		"client": [
+			"net.west.fantasymod.FantasyModClient"
+		]
+	},
+	"mixins": [
+		"fantasymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
