@@ -2,6 +2,9 @@ package net.west.fantasymod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.west.fantasymod.block.ModBlocks;
+import net.west.fantasymod.item.ModItemGroups;
+import net.west.fantasymod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,8 +14,12 @@ public class Fantasymod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 
-		LOGGER.info("Hello Fabric world!");
+
+
 	}
 }
