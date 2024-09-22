@@ -18,6 +18,16 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.MITHIRL);
                         entries.add(ModBlocks.MITHIRL_STONE);
+                        entries.add(ModBlocks.MITHIRL_COBBLE);
+                        entries.add(ModBlocks.MITHIRL_STONEBRICK);
+                        entries.add(ModBlocks.BLACK_STONEBRICK);
+                        entries.add(ModBlocks.MITHIRL_DEEPSLATE);
+                        entries.add(ModBlocks.BLACK_STONE);
+                        entries.add(ModBlocks.BLACK_COBBLE);
+                        entries.add(ModBlocks.SILVER_STONE);
+                        entries.add(ModBlocks.CRYSTAL_STONE);
+                        entries.add(ModBlocks.LIMESTONE);
+
                     })
 
 
