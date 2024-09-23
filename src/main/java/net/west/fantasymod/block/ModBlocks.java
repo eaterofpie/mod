@@ -1,9 +1,8 @@
 package net.west.fantasymod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.TorchBlock;
+import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -46,6 +45,46 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(7F)));
     public static final Block DWARF_STONE = registerBlock("dwarf_stone",
             new Block(AbstractBlock.Settings.create().strength(8F)));
+    public static final Block DWARF_STONEBRICK = registerBlock("dwarf_stonebrick",
+            new Block(AbstractBlock.Settings.create().strength(8F)));
+    public static final Block RIVER_STONE = registerBlock("river_stone",
+            new Block(AbstractBlock.Settings.create().strength(5F)));
+    public static final Block SILVER_LOG = registerBlock("silver_log",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block CRYSTAL_LOG = registerBlock("crystal_log",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block CRYSTAL_LEAVES = registerBlock("crystal_leaves",
+            new LeavesBlock((AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 9))));
+    public static final Block SILVER_LEAVES = registerBlock("silver_leaves",
+            new LeavesBlock((AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 9))));
+    public static final Block DWARF_CRYSTAL_STONE = registerBlock("dwarf_crystal_stone",
+            new Block(AbstractBlock.Settings.create().strength(0.6F).luminance(state -> 5)));
+    public static final Block DWARF_LIMESTONE = registerBlock("dwarf_limestone",
+            new Block(AbstractBlock.Settings.create().strength(1.4F)));
+    public static final Block DWARF_RED_STONE = registerBlock("dwarf_red_stone",
+            new Block(AbstractBlock.Settings.create().strength(1.4F)));
+    public static final Block DWARF_ONYNIC = registerBlock("dwarf_onynic",
+            new Block(AbstractBlock.Settings.create().strength(1.4F)));
+    public static final Block WEALT_LEAVES = registerBlock("wealt_leaves",
+            new LeavesBlock((AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 5))));
+    public static final Block WEALT_LOG = registerBlock("wealt_log",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.CYAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 5)));
+    public static final Block VAGLIR_LOG = registerBlock("vaglir_log",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,6 +116,21 @@ public class ModBlocks {
             entries.add(IRON_STONE);
             entries.add(IRON_STONEBRICK);
             entries.add(DWARF_STONE);
+            entries.add(DWARF_STONEBRICK);
+            entries.add(SILVER_LOG);
+            entries.add(SILVER_LEAVES);
+            entries.add(CRYSTAL_LOG);
+            entries.add(CRYSTAL_LEAVES);
+            entries.add(DWARF_CRYSTAL_STONE);
+            entries.add(DWARF_LIMESTONE);
+            entries.add(DWARF_RED_STONE);
+            entries.add(DWARF_ONYNIC);
+            entries.add(WEALT_LEAVES);
+            entries.add(WEALT_LOG);
+            entries.add(VAGLIR_LOG);
+
+
+
         });
     }
 }

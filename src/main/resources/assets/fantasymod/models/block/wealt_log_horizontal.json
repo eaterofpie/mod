@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "fantasymod:block/wealt_log_top",
+    "side": "fantasymod:block/wealt_log"
+  }
+}

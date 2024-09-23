@@ -27,6 +27,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SILVER_STONE);
                         entries.add(ModBlocks.CRYSTAL_STONE);
                         entries.add(ModBlocks.LIMESTONE);
+                        entries.add(ModBlocks.RIVER_STONE);
 
                     })
 

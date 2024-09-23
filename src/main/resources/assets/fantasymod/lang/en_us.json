@@ -14,5 +14,13 @@
   "block.fantasymod.limestone": "limestone",
   "block.fantasymod.lime_mossystone": "lime_mossystone",
   "block.fantasymod.iron_stone": "iron_stone",
-  "block.fantasymod.iron_stonebrick": "iron_stonebrick"
+  "block.fantasymod.iron_stonebrick": "iron_stonebrick",
+  "block.fantasymod.river_stone": "river_stone",
+  "block.fantasymod.dwarf_stone": "dwarf_stone",
+  "block.fantasymod.dwarf_stonebrick": "dwarf_stonebrick",
+  "block.fantasymod.silver_log": "silver_log",
+  "block.fantasymod.crystal_log": "crystal_log",
+  "block.fantasymod.crystal_leaves": "crystal_leaves",
+  "block.fantasymod.silver_leaves": "silver_leaves",
+  "block.fantasymod.dwarf_red_stone": "dwarf_red_stone"
 }
