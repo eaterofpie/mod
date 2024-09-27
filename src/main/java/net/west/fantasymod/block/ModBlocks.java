@@ -52,34 +52,103 @@ public class ModBlocks {
     public static final Block SILVER_LOG = registerBlock("silver_log",
             new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
     public static final Block CRYSTAL_LOG = registerBlock("crystal_log",
-            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
     public static final Block CRYSTAL_LEAVES = registerBlock("crystal_leaves",
-            new LeavesBlock((AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 9))));
+            new LeavesBlock((LeavesBlock.Settings.create().strength(2.0F).noCollision().burnable().luminance(state -> 9))));
     public static final Block SILVER_LEAVES = registerBlock("silver_leaves",
-            new LeavesBlock((AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 9))));
+            new LeavesBlock((AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 9))));
     public static final Block DWARF_CRYSTAL_STONE = registerBlock("dwarf_crystal_stone",
             new Block(AbstractBlock.Settings.create().strength(0.6F).luminance(state -> 5)));
     public static final Block DWARF_LIMESTONE = registerBlock("dwarf_limestone",
             new Block(AbstractBlock.Settings.create().strength(1.4F)));
+    public static final Block DWARF_STONEBLOCK = registerBlock("dwarf_stoneblock",
+            new Block(AbstractBlock.Settings.create().strength(1.4F)));
+    public static final Block DWARF_PILLAR = registerBlock("dwarf_pillar",
+            new Block(AbstractBlock.Settings.create().strength(1.5F)));
     public static final Block DWARF_RED_STONE = registerBlock("dwarf_red_stone",
             new Block(AbstractBlock.Settings.create().strength(1.4F)));
     public static final Block DWARF_ONYNIC = registerBlock("dwarf_onynic",
             new Block(AbstractBlock.Settings.create().strength(1.4F)));
     public static final Block WEALT_LEAVES = registerBlock("wealt_leaves",
-            new LeavesBlock((AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 5))));
+            new LeavesBlock((LeavesBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 5))));
     public static final Block WEALT_LOG = registerBlock("wealt_log",
             new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.CYAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 5)));
     public static final Block VAGLIR_LOG = registerBlock("vaglir_log",
             new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
-
-
-
-
-
-
-
-
-
+    public static final Block DWARF_SAPLOG = registerBlock("dwarf_saplog",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block DWARF_LIGHTLOG = registerBlock("dwarf_lightlog",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block DWARF_light_LEAVES = registerBlock("dwarf_light_leaves",
+            new LeavesBlock((AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 5))));
+    public static final Block DWARF_YORKRYLOG = registerBlock("dwarf_yorkrylog",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block DWARF_EMERWAVELOG = registerBlock("dwarf_emerwavresaplog",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block ELF_LANTOLOG = registerBlock("elf_lantolog",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block ELF_LANTO_LEAVES = registerBlock("elf_lanto_leaves",
+            new LeavesBlock((AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 5))));
+    public static final Block DWARF_ARAPAHOLOG = registerBlock("dwarf_arapaholog",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.BLUE).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block DWARF_GIOLOG = registerBlock("dwarf_giolog",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block DWARF_GIO_LEAVES = registerBlock("dwarf_gio_leaves",
+              new LeavesBlock((AbstractPlantBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 5))));
+    public static final Block DARKELF_CROTHERLOG = registerBlock("darkelf_crotherlog",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block DARKELF_LAGANLOG = registerBlock("darkelf_laganlog",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block DWARF_WHITEBRICK = registerBlock("dwarf_whitebrick",
+            new Block(AbstractBlock.Settings.create().strength(1.5F)));
+    public static final Block DARKELF_STONE = registerBlock("darkelf_stone",
+            new Block(AbstractBlock.Settings.create().strength(1.4F)));
+    public static final Block DARKELF_STONEBRICK = registerBlock("darkelf_stonebrick",
+            new Block(AbstractBlock.Settings.create().strength(6.F)));
+    public static final Block DARKELF_BEIGE = registerBlock("darkelf_beige",
+            new Block(AbstractBlock.Settings.create().strength(1.5F)));
+    public static final Block DARKELF_COBALT = registerBlock("darkelf_cobalt",
+            new Block(AbstractBlock.Settings.create().strength(9F)));
+    public static final Block DARKELF_BEIGE_SLAB =registerBlock("darkelf_beige_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(7F)));
+    public static final Block DARKELF_BRICK = registerBlock("darkelf_brick",
+            new Block(AbstractBlock.Settings.create().strength(1.4F)));
+    public static final Block BURNT_LOG = registerBlock("burnt_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(4F)));
+    public static final Block MOSSY_OAK_LOG = registerBlock("mossy_oak_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(6F)));
+    public static final Block DEAD_LOG = registerBlock("dead_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(4F)));
+    public static final Block SUNELF_LOG = registerBlock("sunelf_log",
+            new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
+    public static final Block DROW_STONE = registerBlock("drow_stone",
+            new Block(AbstractBlock.Settings.create().strength(1.5F)));
+    public static final Block DROW_BRICK =registerBlock("drow_brick",
+            new Block(AbstractBlock.Settings.create().strength(1.3F)));
+    public static final Block DROW_LOG = registerBlock("drow_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(7F)));
+    public static final Block DROW_LEAVES = registerBlock("drow_leaves",
+            new LeavesBlock((AbstractPlantBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 5))));
+    public static final Block DUSKWOOD_LOG = registerBlock("duskwood_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(7F)));
+    public static final Block DUSKWOOD_LEAVES = registerBlock("duskwood_leaves",
+            new LeavesBlock((AbstractPlantBlock.Settings.create().mapColor(MapColor.BRIGHT_TEAL).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.AZALEA_LEAVES).burnable().luminance(state -> 5))));
+    public static final Block SOUL_LOG = registerBlock("soul_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(7F).luminance(state -> 7)));
+    public static final Block SOUL_STONE = registerBlock("soul_stone",
+            new Block(AbstractBlock.Settings.create().strength(1.4F).luminance(state -> 7)));
+    public static final Block SOUL_LEAVES = registerBlock("soul_leaves",
+            new LeavesBlock((AbstractPlantBlock.Settings.create().mapColor(MapColor.LAPIS_BLUE).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.GRASS).burnable().luminance(state -> 9))));
+    public static final Block IRONWOOD_LOG = registerBlock("ironwood_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(7F).luminance(state -> 7)));
+    public static final Block IRONWOOD_LEAVES = registerBlock("ironwood_leaves",
+            new LeavesBlock((AbstractPlantBlock.Settings.create().mapColor(MapColor.BLUE).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.GRASS).burnable().luminance(state -> 9))));
+    public static final Block HIEXEL_LOG = registerBlock("hiexel_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(7F).luminance(state -> 7)));
+    public static final Block HIEXEL_LEAVES = registerBlock("hiexel_leaves",
+            new LeavesBlock((AbstractPlantBlock.Settings.create().mapColor(MapColor.BLUE).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.GRASS).burnable().luminance(state -> 9))));
+   public static final Block HIEXEL_STONE = registerBlock("hiexel_stone",
+           new Block(AbstractBlock.Settings.create().strength(6F)));
 
 
 
@@ -125,9 +194,43 @@ public class ModBlocks {
             entries.add(DWARF_LIMESTONE);
             entries.add(DWARF_RED_STONE);
             entries.add(DWARF_ONYNIC);
+            entries.add(DWARF_STONEBLOCK);
+            entries.add(DWARF_PILLAR);
             entries.add(WEALT_LEAVES);
             entries.add(WEALT_LOG);
             entries.add(VAGLIR_LOG);
+            entries.add(DWARF_SAPLOG);
+            entries.add(DWARF_LIGHTLOG);
+            entries.add(DWARF_light_LEAVES);
+            entries.add(DWARF_EMERWAVELOG);
+            entries.add(DWARF_YORKRYLOG);
+            entries.add(DWARF_ARAPAHOLOG);
+            entries.add(DWARF_GIOLOG);
+            entries.add(DWARF_GIO_LEAVES);
+            entries.add(DWARF_WHITEBRICK);
+            entries.add(ELF_LANTOLOG);
+            entries.add(ELF_LANTO_LEAVES);
+            entries.add(DARKELF_LAGANLOG);
+            entries.add(DARKELF_CROTHERLOG);
+            entries.add(DARKELF_BEIGE);
+            entries.add(DARKELF_COBALT);
+            entries.add(DARKELF_STONEBRICK);
+            entries.add(DARKELF_STONE);
+            entries.add(DARKELF_BEIGE_SLAB);
+            entries.add(DARKELF_BRICK);
+            entries.add(BURNT_LOG);
+            entries.add(MOSSY_OAK_LOG);
+            entries.add(DEAD_LOG);
+            entries.add(SUNELF_LOG);
+            entries.add(DROW_STONE);
+            entries.add(DROW_BRICK);
+            entries.add(DROW_LOG);
+            entries.add(DROW_LEAVES);
+            entries.add(DUSKWOOD_LEAVES);
+            entries.add(DUSKWOOD_LOG);
+
+
+
 
 
 

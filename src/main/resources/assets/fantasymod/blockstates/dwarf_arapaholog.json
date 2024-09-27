@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "fantasymod:block/dwarf_arapaholog_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "fantasymod:block/dwarf_arapaholog"
+    },
+    "axis=z": {
+      "model": "fantasymod:block/dwarf_arapaholog_horizontal",
+      "x": 90
+    }
+  }
+}

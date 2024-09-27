@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "fantasymod:block/elf_lanto_leaves"
+  }
+}

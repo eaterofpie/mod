@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fantasymod:block/darkelf_beige_slab"
+    },
+    "type=double": {
+      "model": "fantasymod:block/darkelf_beige"
+    },
+    "type=top": {
+      "model": "fantasymod:block/darkelf_beige_slab_top"
+    }
+  }
+}

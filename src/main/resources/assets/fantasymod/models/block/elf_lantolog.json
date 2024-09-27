@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "fantasymod:block/elf_lantolog_top",
+    "side": "fantasymod:block/elf_lantolog"
+  }
+}

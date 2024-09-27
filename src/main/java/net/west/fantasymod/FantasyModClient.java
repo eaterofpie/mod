@@ -11,7 +11,13 @@ import net.west.fantasymod.block.ModBlocks;
 public class FantasyModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CRYSTAL_TORCH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CRYSTAL_LEAVES, RenderLayer.getCutout());
+        ParticleFactoryRegistry.getInstance().register(Fantasymod.GREEN_PARTICLE, FlameParticle.Factory::new);
+
+
+
+
+
 
 
 

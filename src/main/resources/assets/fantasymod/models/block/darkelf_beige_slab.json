@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "fantasymod:block/darkelf_beige",
+    "side": "fantasymod:block/darkelf_beige",
+    "top": "fantasymod:block/darkelf_beige"
+  }
+}
