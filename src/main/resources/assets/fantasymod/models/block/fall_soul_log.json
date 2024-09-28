@@ -1,0 +1,30 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "fantasymod:block/fall_soul_log_top",
+		"1": "fantasymod:block/fall_soul_log",
+		"particle": "fantasymod:block/fall_soul_log_top"
+	},
+	"elements": [
+		{
+			"from": [-16, 0, 0],
+			"to": [32, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "voxel_shape",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

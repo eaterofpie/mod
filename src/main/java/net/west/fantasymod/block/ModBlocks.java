@@ -13,6 +13,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.west.fantasymod.Fantasymod;
+import net.west.fantasymod.block.custom.DwarfSwordPlantBlock;
+import net.west.fantasymod.block.custom.FallSoulLogBlock;
+import net.west.fantasymod.block.custom.SoulMushroomBlock;
 
 public class ModBlocks {
     public static final Block MITHIRL_STONE = registerBlock("mithirl_stone",
@@ -149,6 +152,13 @@ public class ModBlocks {
             new LeavesBlock((AbstractPlantBlock.Settings.create().mapColor(MapColor.BLUE).instrument(NoteBlockInstrument.BASS).noCollision().strength(2.0F).sounds(BlockSoundGroup.GRASS).burnable().luminance(state -> 9))));
    public static final Block HIEXEL_STONE = registerBlock("hiexel_stone",
            new Block(AbstractBlock.Settings.create().strength(6F)));
+    public static final Block SOUL_MUSHROOM = registerBlock("soul_mushroom",
+            new SoulMushroomBlock(AbstractBlock.Settings.create().strength(7F).luminance(state -> 7).noCollision()));
+    public static final Block FALL_SOUL_LOG = registerBlock("fall_soul_log",
+            new FallSoulLogBlock(AbstractBlock.Settings.create().strength(7F).luminance(state -> 7)));
+    public static final Block DWARF_SWORD_PLANT = registerBlock("dwarf_sword_plant",
+            new DwarfSwordPlantBlock(AbstractBlock.Settings.create().strength(7F).luminance(state -> 7).noCollision()));
+
 
 
 

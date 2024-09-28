@@ -3,6 +3,7 @@ package net.west.fantasymod;
 import net.fabricmc.api.ModInitializer;
 
 
+
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
 import net.minecraft.particle.SimpleParticleType;
 import net.minecraft.registry.Registries;
@@ -19,7 +20,8 @@ import org.slf4j.LoggerFactory;
 public class Fantasymod implements ModInitializer {
 	public static final String MOD_ID = "fantasymod";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static final SimpleParticleType GREEN_PARTICLE = FabricParticleTypes.simple();
+	public static final SimpleParticleType DROW_PARTICLE = FabricParticleTypes.simple();
+
 
 
 
@@ -34,7 +36,7 @@ public class Fantasymod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "green_particle"), GREEN_PARTICLE);
+		Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "drow_particle"), DROW_PARTICLE);
 
 	}
 

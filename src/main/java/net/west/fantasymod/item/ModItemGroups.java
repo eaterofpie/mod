@@ -68,12 +68,25 @@ public class ModItemGroups {
                         entries.add(ModBlocks.WEALT_LOG);
                         entries.add(ModBlocks.HIEXEL_LOG);
                         entries.add(ModBlocks.HIEXEL_LEAVES);
-
+                        entries.add(ModBlocks.FALL_SOUL_LOG);
 
                     })
 
 
                     .build());
+    public static final ItemGroup FOREST_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Fantasymod.MOD_ID,"forest_items"),
+            FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.RAW_MITHIRL))
+                    .displayName(Text.translatable("forest_items"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.SOUL_MUSHROOM);
+                        entries.add(ModBlocks.DWARF_SWORD_PLANT);
+                    })
+
+
+                    .build());
+
+
 
 
     public static void registerItemGroups() {

@@ -9,13 +9,20 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.World;
+import net.west.fantasymod.block.ModBlocks;
 
 import java.util.Map;
 
 public class wand extends Item {
     public static final Map<Block, Block> WAND_MAP =
             Map.of(
-                    Blocks.STONE, Blocks.STONE_BRICKS
+                    Blocks.STONE, Blocks.STONE_BRICKS,
+                    Blocks.BLUE_WOOL, ModBlocks.BLACK_STONEBRICK,
+                    Blocks.RED_WOOL, ModBlocks.BLACK_STONE,
+                    Blocks.GREEN_WOOL, ModBlocks.DARKELF_BRICK,
+                    Blocks.LIGHT_BLUE_WOOL, ModBlocks.DWARF_LIMESTONE,
+                    Blocks.PINK_WOOL, ModBlocks.DARKELF_STONE
+
             );
     public wand(Settings settings) {
         super(settings);

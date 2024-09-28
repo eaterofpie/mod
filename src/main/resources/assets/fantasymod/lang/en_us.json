@@ -55,6 +55,9 @@
   "block.fantasymod.ironwood_leaves": "ironwood_leaves",
   "block.fantasymod.hiexel_log": "hiexel_log",
   "block.fantasymod.hiexel_stone": "hiexel_stone",
-  "block.fantasymod.soul_stone": "soul_stone"
+  "block.fantasymod.soul_stone": "soul_stone",
+  "block.fantasymod.soul_mushroom": "soul_mushroom",
+  "block.fantasymod.fall_soul_log": "fall_soul_log",
+  "block.fantasymod.dwarf_sword_plant":"dwarf_sword_plant"
 
 }
