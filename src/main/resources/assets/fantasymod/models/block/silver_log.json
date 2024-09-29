@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "fantasymod:block/silver_log_top",
-    "side": "fantasymod:block/silver_log"
-  }
-}

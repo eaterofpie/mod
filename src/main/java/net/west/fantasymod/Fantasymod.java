@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 public class Fantasymod implements ModInitializer {
 	public static final String MOD_ID = "fantasymod";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static final SimpleParticleType DROW_PARTICLE = FabricParticleTypes.simple();
+
 
 
 
@@ -36,7 +36,7 @@ public class Fantasymod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "drow_particle"), DROW_PARTICLE);
+
 
 	}
 

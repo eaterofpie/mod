@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "fantasymod:block/dwarf_yorkrylog_top",
-    "side": "fantasymod:block/dwarf_yorkrylog"
-  }
-}

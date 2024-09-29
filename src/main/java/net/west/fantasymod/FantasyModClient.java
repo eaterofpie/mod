@@ -14,7 +14,6 @@ public class FantasyModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CRYSTAL_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SOUL_MUSHROOM, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DWARF_SWORD_PLANT, RenderLayer.getCutout());
-        ParticleFactoryRegistry.getInstance().register(Fantasymod.DROW_PARTICLE, FlameParticle.Factory::new);
 
 
 
