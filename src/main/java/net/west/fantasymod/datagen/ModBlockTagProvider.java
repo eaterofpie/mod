@@ -46,7 +46,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DROW_STONE)
                 .add(ModBlocks.HIEXEL_STONE)
                 .add(ModBlocks.RIVER_STONE)
-                .add(ModBlocks.SOUL_STONE);
+                .add(ModBlocks.SOUL_STONE)
+                .add(ModBlocks.SOUL_BRICK)
+                .add(ModBlocks.DWARF_CELESTIAL)
+                .add(ModBlocks.SOUL_STONE_FENCE);
+
+
 
 
 
@@ -84,8 +89,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ELF_LANTO_LEAVES)
                 .add(ModBlocks.HIEXEL_LEAVES)
                 .add(ModBlocks.IRONWOOD_LEAVES)
-                .add(ModBlocks.SOUL_MUSHROOM)
                 .add(ModBlocks.SOUL_LEAVES);
+
+
+
+
+
+        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.SOUL_STONE_FENCE);
 
     }
 }

@@ -15,10 +15,5 @@ public class FantasymodDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
-
-
-
-
-
 	}
 }

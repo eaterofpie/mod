@@ -3,12 +3,6 @@ package net.west.fantasymod;
 import net.fabricmc.api.ModInitializer;
 
 
-
-import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
-import net.minecraft.particle.SimpleParticleType;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 import net.west.fantasymod.block.ModBlocks;
 import net.west.fantasymod.item.ModItemGroups;
 import net.west.fantasymod.item.ModItems;

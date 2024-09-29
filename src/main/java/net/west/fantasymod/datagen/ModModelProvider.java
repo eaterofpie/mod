@@ -15,12 +15,12 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        BlockStateModelGenerator.BlockTexturePool modelGarnetPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SOUL_BRICK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FALL_SOUL_LOG);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_CRYSTAL_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_COBBLE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKELF_LAGANLOG);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUL_MUSHROOM);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_STONEBLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_DEEPSLATE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_STONEBRICK);
@@ -46,8 +46,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_LIGHTLOG);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKELF_COBALT);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKELF_CROTHERLOG);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRYSTAL_TORCH);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKELF_BEIGE_SLAB);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_COBBLE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BURNT_LOG);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRYSTAL_STONE);
@@ -82,6 +80,13 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUL_LOG);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOUL_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SUNELF_LOG);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_CELESTIAL);
+
+
+        modelGarnetPool.fence(ModBlocks.SOUL_STONE_FENCE);
+        modelGarnetPool.slab(ModBlocks.DARKELF_BEIGE_SLAB);
+
 
     }
 

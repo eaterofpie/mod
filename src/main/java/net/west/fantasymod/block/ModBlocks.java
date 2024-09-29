@@ -13,7 +13,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.west.fantasymod.Fantasymod;
-import net.west.fantasymod.block.custom.DwarfSwordPlantBlock;
 import net.west.fantasymod.block.custom.FallSoulLogBlock;
 import net.west.fantasymod.block.custom.SoulMushroomBlock;
 
@@ -156,8 +155,21 @@ public class ModBlocks {
             new SoulMushroomBlock(AbstractBlock.Settings.create().strength(7F).luminance(state -> 7).noCollision()));
     public static final Block FALL_SOUL_LOG = registerBlock("fall_soul_log",
             new FallSoulLogBlock(AbstractBlock.Settings.create().strength(7F).luminance(state -> 7)));
-    public static final Block DWARF_SWORD_PLANT = registerBlock("dwarf_sword_plant",
-            new DwarfSwordPlantBlock(AbstractBlock.Settings.create().strength(7F).luminance(state -> 7).noCollision()));
+    public static final Block SOUL_BRICK = registerBlock("soul_brick",
+            new Block(AbstractBlock.Settings.create().strength(1.4F).luminance(state -> 7)));
+    public static final Block SOUL_STONE_FENCE = registerBlock("soul_stone_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool().luminance(state -> 4)));
+    public static final Block DARKELF_TORCH = registerBlock("darkelf_torch",
+            new TorchBlock(ParticleTypes.FLAME, AbstractBlock.Settings.create().noCollision().breakInstantly().luminance(state -> 10).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block DWARF_CELESTIAL = registerBlock("dwarf_celestial",
+            new Block(AbstractBlock.Settings.create().strength(1.5F)));
+    public static final Block ELF_VINE = registerBlock("elf_vine",
+            new VineBlock(AbstractBlock.Settings.create().strength(2F).noCollision()));
+    public static final Block ELF_TWISTING_VINES = registerBlock("elf_twisting_vines",
+            new TwistingVinesBlock(AbstractBlock.Settings.create().strength(2F)));
+    public static final Block DROW_VINE = registerBlock("drow_vine",
+            new VineBlock(AbstractBlock.Settings.create().strength(3F).noCollision().luminance(state -> 10)));
+
 
 
 

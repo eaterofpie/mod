@@ -11,10 +11,10 @@ import net.west.fantasymod.Fantasymod;
 import net.west.fantasymod.block.ModBlocks;
 
 public class ModItemGroups {
-    public static final ItemGroup DWARF_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(Fantasymod.MOD_ID,"dwarf_items"),
+    public static final ItemGroup MITHIRL_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Fantasymod.MOD_ID,"mithirl_items"),
             FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.MITHIRL))
-                    .displayName(Text.translatable("mithril_items"))
+                    .displayName(Text.translatable("itemgroup.fantasymod.mithril"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.MITHIRL);
                         entries.add(ModBlocks.MITHIRL_STONE);
@@ -30,12 +30,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RIVER_STONE);
                         entries.add(ModBlocks.HIEXEL_STONE);
                         entries.add(ModBlocks.SOUL_STONE);
+                        entries.add(ModBlocks.SOUL_BRICK);
+                        entries.add(ModBlocks.DARKELF_BEIGE_SLAB);
+                        entries.add(ModBlocks.SOUL_STONE_FENCE);
+                        entries.add(ModBlocks.DWARF_CELESTIAL);
 
                     })
 
 
                     .build());
-    public static final ItemGroup WOOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup WAND_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Fantasymod.MOD_ID,"wood_items"),
             FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.WAND))
                     .displayName(Text.translatable("WOOD_items"))
@@ -74,13 +78,17 @@ public class ModItemGroups {
 
 
                     .build());
-    public static final ItemGroup FOREST_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup RAW_MITHIRL_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Fantasymod.MOD_ID,"forest_items"),
             FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.RAW_MITHIRL))
                     .displayName(Text.translatable("forest_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.SOUL_MUSHROOM);
-                        entries.add(ModBlocks.DWARF_SWORD_PLANT);
+                        entries.add(ModBlocks.DARKELF_TORCH);
+                        entries.add(ModBlocks.CRYSTAL_TORCH);
+                        entries.add(ModBlocks.ELF_VINE);
+                        entries.add(ModBlocks.ELF_TWISTING_VINES);
+                        entries.add(ModBlocks.DROW_VINE);
                     })
 
 
