@@ -30,14 +30,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, MITHIRL_SMELTABLES, RecipeCategory.MISC, ModItems.RAW_MITHIRL, 0.25f, 100, "raw_mithirl");
 
 
-
-
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_MITHIRL, RecipeCategory.DECORATIONS, ModBlocks.MITHIRL_ORE);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MITHIRL, RecipeCategory.DECORATIONS, ModBlocks.MITHIRL_COBBLE);
-
-
-
-
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MITHIRL, RecipeCategory.DECORATIONS, ModBlocks.MITHIRL_COBBLE, convertBetween(ModBlocks.MITHIRL_COBBLE, ModItems.MITHIRL), null, convertBetween(ModItems.MITHIRL, ModBlocks.MITHIRL_COBBLE), null);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MITHIRL_COBBLE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MITHIRL_STONE, convertBetween(ModBlocks.MITHIRL_STONE, ModBlocks.MITHIRL_COBBLE), null, convertBetween(ModBlocks.MITHIRL_COBBLE, ModBlocks.MITHIRL_STONE), null);
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MITHIRL_COBBLE)
@@ -103,9 +97,98 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.DWARF_STONE), conditionsFromItem(ModBlocks.DWARF_STONE))
                 .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "dwarf_brick_from_dwarf_stone"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DROW_STONE)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModBlocks.DROW_COBBLE)
+                .criterion(hasItem(ModBlocks.DROW_COBBLE), conditionsFromItem(ModBlocks.DROW_COBBLE))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "drow_stone_from_drow_cobble"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DROW_BRICK)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModBlocks.DROW_STONE)
+                .criterion(hasItem(ModBlocks.DROW_STONE), conditionsFromItem(ModBlocks.DROW_STONE))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "drow_brick_from_drow_stone"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKELF_BRICK)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModBlocks.DARKELF_STONE)
+                .criterion(hasItem(ModBlocks.DARKELF_STONE), conditionsFromItem(ModBlocks.DARKELF_STONE))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "darkelf_brick_from_darkelf_stone"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKELF_COBALT)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModBlocks.DARKELF_BRICK)
+                .criterion(hasItem(ModBlocks.DARKELF_BRICK), conditionsFromItem(ModBlocks.DARKELF_BRICK))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "darkelf_cobalt_from_darkelf_brick"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKELF_BEIGE)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModBlocks.DARKELF_COBALT)
+                .criterion(hasItem(ModBlocks.DARKELF_COBALT), conditionsFromItem(ModBlocks.DARKELF_COBALT))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "darkelf_beige_from_darkelf_cobalt"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARKELF_BEIGE_SLAB)
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', ModBlocks.DARKELF_BEIGE)
+                .criterion(hasItem(ModBlocks.DARKELF_BEIGE), conditionsFromItem(ModBlocks.DARKELF_BEIGE))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "darkelf_beige_slab_from_darkelf_beige"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.DARKELF_LAGANLOG)
+                .pattern("RRR")
+                .pattern("RRR")
+                .input('R', ModBlocks.DARKELF_COBALT)
+                .criterion(hasItem(ModBlocks.DARKELF_COBALT), conditionsFromItem(ModBlocks.DARKELF_COBALT))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "darkelf_laganlog_from_darkelf_cobalt"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODELF_COBBLE)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModItems.GEM_RUDY)
+                .criterion(hasItem(ModItems.GEM_RUDY), conditionsFromItem(ModItems.GEM_RUDY))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "bloodelf_cobble_from_gem_ruby"));
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODELF_STONE)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModBlocks.BLOODELF_COBBLE)
+                .criterion(hasItem(ModBlocks.BLOODELF_COBBLE), conditionsFromItem(ModBlocks.BLOODELF_COBBLE))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "bloodelf_stone_from_bloodelf_cobble"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLOODELF_BRICK)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModBlocks.BLOODELF_STONE)
+                .criterion(hasItem(ModBlocks.BLOODELF_STONE), conditionsFromItem(ModBlocks.BLOODELF_STONE))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "bloodelf_brick_from_bloodelf_stone"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHAOSDWARF_STONE)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModBlocks.CHAOSDWARF_COBBLE)
+                .criterion(hasItem(ModBlocks.CHAOSDWARF_COBBLE), conditionsFromItem(ModBlocks.CHAOSDWARF_COBBLE))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "chaosdwarf_stone_from_chaosdwarf_cobble"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHAOSDWARF_COBBLE)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModItems.GEM_RUDY)
+                .criterion(hasItem(ModItems.GEM_RUDY), conditionsFromItem(ModItems.GEM_RUDY))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "chaosdwarf_cobble_from_gem_ruby"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHAOSDWARF_BRICK)
+                .pattern("RR")
+                .pattern("RR")
+                .input('R', ModBlocks.CHAOSDWARF_STONE)
+                .criterion(hasItem(ModBlocks.CHAOSDWARF_STONE), conditionsFromItem(ModBlocks.CHAOSDWARF_STONE))
+                .offerTo(exporter, Identifier.of(Fantasymod.MOD_ID, "chaosdwarf_brick_from_chaosdwarf_stone"));
     }
-
 
 }
 

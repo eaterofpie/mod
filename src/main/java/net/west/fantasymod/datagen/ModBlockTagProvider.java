@@ -56,6 +56,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.SOUL_STONE)
                 .add(ModBlocks.SOUL_BRICK)
                 .add(ModBlocks.DWARF_CELESTIAL)
+                .add(ModBlocks.BLOODELF_COBBLE)
+                .add(ModBlocks.BLOODELF_STONE)
+                .add(ModBlocks.BLOODELF_BRICK)
+                .add(ModBlocks.CHAOSDWARF_COBBLE)
+                .add(ModBlocks.CHAOSDWARF_STONE)
+                .add(ModBlocks.CHAOSDWARF_BRICK)
                 .add(ModBlocks.SOUL_STONE_FENCE);
 
 

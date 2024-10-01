@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_drow_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fantasymod:drow_stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fantasymod:drow_brick_from_drow_stone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_drow_stone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fantasymod:drow_brick_from_drow_stone"
+    ]
+  }
+}

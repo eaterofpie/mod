@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mithirl_cobble": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fantasymod:mithirl_cobble"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:mithirl_from_mithirl_cobble"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mithirl_cobble"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:mithirl_from_mithirl_cobble"
+    ]
+  }
+}

@@ -41,6 +41,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DWARF_CELESTIAL);
                         entries.add(ModBlocks.DROW_COBBLE);
                         entries.add(ModBlocks.DWARF_COBBLE);
+                        entries.add(ModBlocks.BLOODELF_COBBLE);
+                        entries.add(ModBlocks.BLOODELF_STONE);
+                        entries.add(ModBlocks.CHAOSDWARF_COBBLE);
+                        entries.add(ModBlocks.CHAOSDWARF_STONE);
+                        entries.add(ModBlocks.CHAOSDWARF_BRICK);
 
                     })
 

@@ -89,6 +89,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_CELESTIAL);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKELF_BEIGE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOODELF_COBBLE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOODELF_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOODELF_BRICK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHAOSDWARF_COBBLE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHAOSDWARF_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHAOSDWARF_BRICK);
 
 
         modelGarnetPool.fence(ModBlocks.SOUL_STONE_FENCE);

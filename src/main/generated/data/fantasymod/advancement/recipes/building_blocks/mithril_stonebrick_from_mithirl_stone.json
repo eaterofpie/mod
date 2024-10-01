@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mithirl_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fantasymod:mithirl_stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fantasymod:mithril_stonebrick_from_mithirl_stone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mithirl_stone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fantasymod:mithril_stonebrick_from_mithirl_stone"
+    ]
+  }
+}

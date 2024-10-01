@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chaosdwarf_cobble": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fantasymod:chaosdwarf_cobble"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fantasymod:chaosdwarf_stone_from_chaosdwarf_cobble"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chaosdwarf_cobble"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fantasymod:chaosdwarf_stone_from_chaosdwarf_cobble"
+    ]
+  }
+}

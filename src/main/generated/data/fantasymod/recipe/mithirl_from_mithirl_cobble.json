@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "fantasymod:mithirl_cobble"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "fantasymod:mithirl"
+  }
+}

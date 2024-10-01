@@ -184,6 +184,19 @@ public class ModBlocks {
     public static final Block MITHIRL_DEEPSLATE_ORE = registerBlock("mithirl_deepslate_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).luminance(state -> 4)));
+    public static final Block BLOODELF_COBBLE = registerBlock("bloodelf_cobble",
+            new Block(AbstractBlock.Settings.create().strength(10F).luminance(state -> 4)));
+    public static final Block BLOODELF_STONE = registerBlock("bloodelf_stone",
+            new Block(AbstractBlock.Settings.create().strength(10F).luminance(state -> 4)));
+    public static final Block BLOODELF_BRICK = registerBlock("bloodelf_brick",
+            new Block(AbstractBlock.Settings.create().strength(10F).luminance(state -> 4)));
+    public static final Block CHAOSDWARF_COBBLE = registerBlock("chaosdwarf_cobble",
+            new Block(AbstractBlock.Settings.create().strength(10F).luminance(state -> 4)));
+    public static final Block CHAOSDWARF_STONE = registerBlock( "chaosdwarf_stone",
+            new Block(AbstractBlock.Settings.create().strength(10F).luminance(state -> 4)));
+    public static final Block CHAOSDWARF_BRICK = registerBlock("chaosdwarf_brick",
+            new Block(AbstractBlock.Settings.create().strength(10F).luminance(state -> 4)));
+
 
 
 

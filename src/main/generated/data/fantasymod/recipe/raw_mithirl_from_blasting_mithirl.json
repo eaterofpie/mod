@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "raw_mithirl",
+  "ingredient": {
+    "item": "fantasymod:mithirl"
+  },
+  "result": {
+    "id": "fantasymod:raw_mithirl"
+  }
+}

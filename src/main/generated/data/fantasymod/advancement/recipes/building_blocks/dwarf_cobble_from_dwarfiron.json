@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dwarfiron": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fantasymod:dwarfiron"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fantasymod:dwarf_cobble_from_dwarfiron"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dwarfiron"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fantasymod:dwarf_cobble_from_dwarfiron"
+    ]
+  }
+}
