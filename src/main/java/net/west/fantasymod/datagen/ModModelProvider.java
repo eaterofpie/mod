@@ -16,6 +16,9 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool modelGarnetPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SOUL_BRICK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_BRICK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_COBBLESTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_COBBLE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FALL_SOUL_LOG);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_CRYSTAL_STONE);
@@ -24,6 +27,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_STONEBLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_DEEPSLATE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_STONEBRICK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_DEEPSLATE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRYSTAL_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELF_LANTO_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WEALT_LOG);
@@ -54,6 +59,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKELF_STONEBRICK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DROW_BRICK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DROW_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DROW_COBBLE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DUSKWOOD_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DUSKWOOD_LOG);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_ARAPAHOLOG);
@@ -82,6 +88,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SUNELF_LOG);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MITHIRL_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DWARF_CELESTIAL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKELF_BEIGE);
 
 
         modelGarnetPool.fence(ModBlocks.SOUL_STONE_FENCE);

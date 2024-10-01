@@ -12,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.west.fantasymod.Fantasymod;
 import net.west.fantasymod.block.custom.FallSoulLogBlock;
 import net.west.fantasymod.block.custom.SoulMushroomBlock;
@@ -47,6 +48,12 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(7F)));
     public static final Block DWARF_STONE = registerBlock("dwarf_stone",
             new Block(AbstractBlock.Settings.create().strength(8F)));
+    public static final Block DWARF_COBBLE = registerBlock("dwarf_cobble",
+            new Block(AbstractBlock.Settings.create().strength(9F)));
+    public static final Block DWARF_COBBLESTONE = registerBlock("dwarf_cobblestone",
+            new Block(AbstractBlock.Settings.create().strength(10F)));
+    public static final Block DWARF_BRICK = registerBlock("dwarf_brick",
+            new Block(AbstractBlock.Settings.create().strength(4F)));
     public static final Block DWARF_STONEBRICK = registerBlock("dwarf_stonebrick",
             new Block(AbstractBlock.Settings.create().strength(8F)));
     public static final Block RIVER_STONE = registerBlock("river_stone",
@@ -125,6 +132,8 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable().luminance(state -> 7)));
     public static final Block DROW_STONE = registerBlock("drow_stone",
             new Block(AbstractBlock.Settings.create().strength(1.5F)));
+    public static final Block DROW_COBBLE = registerBlock("drow_cobble",
+            new Block(AbstractBlock.Settings.create().strength(1.5F)));
     public static final Block DROW_BRICK =registerBlock("drow_brick",
             new Block(AbstractBlock.Settings.create().strength(1.3F)));
     public static final Block DROW_LOG = registerBlock("drow_log",
@@ -168,7 +177,14 @@ public class ModBlocks {
     public static final Block ELF_TWISTING_VINES = registerBlock("elf_twisting_vines",
             new TwistingVinesBlock(AbstractBlock.Settings.create().strength(2F)));
     public static final Block DROW_VINE = registerBlock("drow_vine",
-            new VineBlock(AbstractBlock.Settings.create().strength(3F).noCollision().luminance(state -> 10)));
+            new VineBlock(AbstractBlock.Settings.create().strength(3F).noCollision().luminance(state -> 4)));
+    public static final Block MITHIRL_ORE = registerBlock("mithirl_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(3f).requiresTool().luminance(state -> 4)));
+    public static final Block MITHIRL_DEEPSLATE_ORE = registerBlock("mithirl_deepslate_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE).luminance(state -> 4)));
+
 
 
 
@@ -192,6 +208,7 @@ public class ModBlocks {
         Fantasymod.LOGGER.info("Registering Mod Blocks for" + Fantasymod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(DWARF_BRICK);
             entries.add(MITHIRL_STONE);
             entries.add(MITHIRL_COBBLE);
             entries.add(MITHIRL_DEEPSLATE);
@@ -206,6 +223,8 @@ public class ModBlocks {
             entries.add(LIME_MOSSYSTONE);
             entries.add(IRON_STONE);
             entries.add(IRON_STONEBRICK);
+            entries.add(DWARF_COBBLE);
+            entries.add(DWARF_COBBLESTONE);
             entries.add(DWARF_STONE);
             entries.add(DWARF_STONEBRICK);
             entries.add(SILVER_LOG);

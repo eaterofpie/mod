@@ -1,5 +1,8 @@
 {
   "values": [
+    "fantasymod:dwarf_brick",
+    "fantasymod:dwarf_cobblestone",
+    "fantasymod:dwarf_cobble",
     "fantasymod:dwarf_stone",
     "fantasymod:dwarf_stoneblock",
     "fantasymod:dwarf_stonebrick",
@@ -24,10 +27,14 @@
     "fantasymod:mithirl_stone",
     "fantasymod:mithirl_deepslate",
     "fantasymod:mithirl_cobble",
+    "fantasymod:mithirl_deepslate_ore",
+    "fantasymod:mithirl_ore",
     "fantasymod:dwarf_whitebrick",
     "fantasymod:darkelf_brick",
+    "fantasymod:darkelf_beige",
     "fantasymod:drow_brick",
     "fantasymod:drow_stone",
+    "fantasymod:drow_cobble",
     "fantasymod:hiexel_stone",
     "fantasymod:river_stone",
     "fantasymod:soul_stone",

@@ -18,7 +18,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.RAW_MITHIRL)
                 .add(ModItems.WAND)
-                .add(ModItems.RAW_MITHIRL);
+                .add(ModItems.RAW_MITHIRL)
+                .add(ModItems.GEM_RUDY);
 
     }
 }

@@ -15,6 +15,7 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.west.fantasymod.block.ModBlocks;
+import net.west.fantasymod.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -50,6 +51,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ELF_TWISTING_VINES);
         addDrop(ModBlocks.DROW_VINE);
 
+
+
+        addDrop(ModBlocks.MITHIRL_ORE, oreDrops(ModBlocks.MITHIRL_ORE, ModItems.RAW_MITHIRL));
+        addDrop(ModBlocks.MITHIRL_DEEPSLATE_ORE, oreDrops(ModBlocks.MITHIRL_DEEPSLATE, ModItems.RAW_MITHIRL));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

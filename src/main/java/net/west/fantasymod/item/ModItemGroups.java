@@ -16,7 +16,12 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(()-> new ItemStack(ModItems.MITHIRL))
                     .displayName(Text.translatable("itemgroup.fantasymod.mithril"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.DWARFSILVER);
+                        entries.add(ModItems.DWARFIRON);
+                        entries.add(ModItems.GEM_RUDY);
                         entries.add(ModItems.MITHIRL);
+                        entries.add(ModBlocks.MITHIRL_ORE);
+                        entries.add(ModBlocks.MITHIRL_DEEPSLATE_ORE);
                         entries.add(ModBlocks.MITHIRL_STONE);
                         entries.add(ModBlocks.MITHIRL_COBBLE);
                         entries.add(ModBlocks.MITHIRL_STONEBRICK);
@@ -34,6 +39,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DARKELF_BEIGE_SLAB);
                         entries.add(ModBlocks.SOUL_STONE_FENCE);
                         entries.add(ModBlocks.DWARF_CELESTIAL);
+                        entries.add(ModBlocks.DROW_COBBLE);
+                        entries.add(ModBlocks.DWARF_COBBLE);
 
                     })
 

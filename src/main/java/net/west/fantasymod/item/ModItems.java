@@ -14,6 +14,9 @@ public class ModItems {
     public static final Item WAND = registerItem("wand",new wand(new Item.Settings()));
     public static final Item MITHIRL = registerItem("mithirl", new Item(new Item.Settings()));
     public static final Item RAW_MITHIRL = registerItem("raw_mithirl",new Item(new Item.Settings()));
+    public static final Item GEM_RUDY = registerItem("gem_ruby",new Item(new Item.Settings()));
+    public static final Item DWARFIRON = registerItem("dwarfiron",new Item(new Item.Settings()));
+    public static final Item DWARFSILVER = registerItem("dwarfsilver",new Item(new Item.Settings()));
 
 public static Item registerItem(String name, Item item) {
     return Registry.register(Registries.ITEM, Identifier.of(Fantasymod.MOD_ID, name), item);
@@ -27,6 +30,9 @@ public static Item registerItem(String name, Item item) {
             entries.add(MITHIRL);
             entries.add(RAW_MITHIRL);
             entries.add(WAND);
+            entries.add(GEM_RUDY);
+            entries.add(DWARFIRON);
+            entries.add(DWARFSILVER);
         });
     }
 

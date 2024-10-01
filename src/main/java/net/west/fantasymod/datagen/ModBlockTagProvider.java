@@ -16,6 +16,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.DWARF_BRICK)
+                .add(ModBlocks.DWARF_COBBLESTONE)
+                .add(ModBlocks.DWARF_COBBLE)
                 .add(ModBlocks.DWARF_STONE)
                 .add(ModBlocks.DWARF_STONEBLOCK)
                 .add(ModBlocks.DWARF_STONEBRICK)
@@ -40,16 +43,21 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MITHIRL_STONE)
                 .add(ModBlocks.MITHIRL_DEEPSLATE)
                 .add(ModBlocks.MITHIRL_COBBLE)
+                .add(ModBlocks.MITHIRL_DEEPSLATE_ORE)
+                .add(ModBlocks.MITHIRL_ORE)
                 .add(ModBlocks.DWARF_WHITEBRICK)
                 .add(ModBlocks.DARKELF_BRICK)
+                .add(ModBlocks.DARKELF_BEIGE)
                 .add(ModBlocks.DROW_BRICK)
                 .add(ModBlocks.DROW_STONE)
+                .add(ModBlocks.DROW_COBBLE)
                 .add(ModBlocks.HIEXEL_STONE)
                 .add(ModBlocks.RIVER_STONE)
                 .add(ModBlocks.SOUL_STONE)
                 .add(ModBlocks.SOUL_BRICK)
                 .add(ModBlocks.DWARF_CELESTIAL)
                 .add(ModBlocks.SOUL_STONE_FENCE);
+
 
 
 
